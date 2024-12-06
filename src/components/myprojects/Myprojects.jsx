@@ -41,7 +41,9 @@ const Myprojects = () => {
             <img src={IMG2} alt="" />
           </div>
           <h3>CareerFasten | Placement Roadmap Website for college</h3>
-          <small className="text-light">HTML | CSS | JS | php | MySQL</small>
+          <small className="text-light">
+            HTML | CSS | JS |ejs | MongoDB | Nodejs | ExpressJS
+          </small>
           <div className="portfolio__item-cta">
             <a
               href="https://github.com/srujanGowda08/careerFasten_Hosting"
