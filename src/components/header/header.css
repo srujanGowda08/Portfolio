@@ -91,3 +91,47 @@ header {
     margin-top: 2.5rem;
   }
 }
+
+.text-animation {
+  position: relative;
+  font-family: "Poppins", sans-serif; /* Modern and stylish font */
+  text-transform: uppercase;
+  font-size: 2em; /* Slightly larger and bolder text */
+  letter-spacing: 3px;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    #ff9f1a,
+    #ff3838,
+    #fff200,
+    #0091ff,
+    #ff9f1a
+  );
+  background-size: 300%; /* Make the gradient smoother */
+  animation: animate 4s ease-in-out infinite; /* Smooth animation */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Glow effect */
+  transition: transform 0.3s ease-in-out; /* Subtle zoom effect */
+}
+
+.text-animation:hover {
+  transform: scale(1.1); /* Zoom in on hover */
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.9); /* Stronger glow */
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+a.text-animation {
+  text-decoration: none; /* Remove underline */
+}

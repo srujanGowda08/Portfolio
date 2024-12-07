@@ -12,7 +12,9 @@ const Header = () => {
         <h1>Srujan G S</h1>
         <h5 className="text-light">
           Software Developer | Founder & CEO of{" "}
-          <a href="https://technify-z.vercel.app/">TechnifyZ</a>
+          <a className="text-animation" href="https://technify-z.vercel.app/">
+            TechnifyZ
+          </a>
         </h5>
         <CTA />
         <HeaderSocials />
